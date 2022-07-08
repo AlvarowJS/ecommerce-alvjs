@@ -20,6 +20,7 @@ html{
 }
 body {
   margin: 0;
+  font-family: var(--font-family);
 }
 h1, h2, h3, h4, p, ul {
   margin-top: 0;
