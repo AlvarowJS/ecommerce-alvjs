@@ -3,8 +3,8 @@ import axios from 'axios';
 import getConfig from '../../utils/getConfig';
 
 export const cartSlice = createSlice({
-    name: '',
-    initialState: undefined,
+    name: 'cart',
+    initialState: null,
     reducers: {
         setCartGlobal: (state, action) => action.payload
     }
