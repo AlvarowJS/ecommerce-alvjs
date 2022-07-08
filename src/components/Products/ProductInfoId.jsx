@@ -28,11 +28,10 @@ const ProductInfoId = ({product}) => {
     const minus = counter - 1
     if(minus >= 1){
       setCounter(minus)
-    }
-    else{
-
-    }
+    }    
   }
+
+  const plusOne = () => setCounter(counter + 1)
 
   return (
     <article className='product-info'>
@@ -40,8 +39,17 @@ const ProductInfoId = ({product}) => {
         <p className='product-info__description'>{product?.description}</p>
         <div className='card-product__price-container'>
             <h3 className='card-product__price-label product-info__label'>Price</h3>
-            <p className='card-product__price-label'></p>
+            <p className='card-product__price-label'>$ {product?.price}</p>
         </div>
+        <div className='product-info__quantity-container'>
+          <div onClick={minusOne} className='product-info__minus'>-</div>
+          <div>{counter}</div>
+          <div onClick={plusOne} className='product-info__plus'>+</div>
+        </div>
+        <button
+        onClick={addToCart}
+        className='product-info__btn'>
+        Add to Cart <i className='bx bxs-cart' ></i></button>
     </article>
   )
 }

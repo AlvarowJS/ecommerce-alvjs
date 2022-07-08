@@ -11,9 +11,15 @@ import HeaderScreen from './components/Shared/HeaderScreen'
 import FooterScreen from './components/Shared/FooterScreen'
 import ProductScreen from './components/Products/ProductScreen'
 import axios from 'axios'
+import { useDispatch } from 'react-redux'
+import { getAllproducts } from './store/slices/products.slice'
 
 function App() {
   
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getAllproducts())
+  }, [])
   // useEffect(() => {
 
   //   const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users'
@@ -34,6 +40,9 @@ function App() {
   return (
     <div className="App">
       <HeaderScreen/>
+      <main className='main'>
+
+      
       <Routes>
         <Route path='/' element={<HomeScreen/>} />
         <Route path='/login' element={<LoginScreen/>} />\
@@ -44,6 +53,7 @@ function App() {
         </Route>
         <Route path='/product/:id' element={<ProductScreen/>} />
       </Routes>
+      </main>
       <FooterScreen/>
     </div>
   )

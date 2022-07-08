@@ -1,0 +1,28 @@
+.purchases__title {    
+    border-bottom: 1px solid var(--border-color);
+    margin: 50px;
+}
+.purchase-card {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 50px;
+    color: rgb(59, 64, 68);
+}
+.purchase__info{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    
+
+    margin: 40px 0;
+}
+
+.purchase__info p {
+    border: 1px solid var(--border-color);
+    padding: 10px 30px;
+}
+.purchases__container {
+    display: flex;    
+    justify-content: center;
+    gap: 20px;
+}

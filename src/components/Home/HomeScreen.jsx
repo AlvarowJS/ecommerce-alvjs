@@ -7,14 +7,12 @@ import './style/homeScreen.css'
 
 const HomeScreen = () => {
   
-  const dispatch = useDispatch()
+  
   
   const products = useSelector(state => state.products)
 
   console.log(products)
-  useEffect(() => {
-    dispatch(getAllproducts())
-  }, [])
+  
   
   return (
     <div className='home'>
