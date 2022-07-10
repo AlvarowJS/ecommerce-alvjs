@@ -85,3 +85,21 @@
   transform: scale(1.2);
   transition: transform 200ms ease;
 }
+
+.form-home {
+  display: flex;
+  padding: 10px 30px;
+}
+.form-input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  outline: none;
+}
+.form-button {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+}
