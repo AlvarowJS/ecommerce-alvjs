@@ -57,7 +57,7 @@ const FilterProducts = ({setFilterPrice, setFilterCategory}) => {
         </div>
 
         <div className='filter__category'>
-          <h3>Category</h3>
+          <h3 className='filter__category-title'>Category</h3>
             <p onClick={changeCategory} className="category">All categories</p>
             {
               categories.map(category => (

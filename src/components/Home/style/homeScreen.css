@@ -145,7 +145,23 @@
 .filter__form{
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
+.filter__price-title{
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--border-color);
+  margin-left: 10px;
+}
+.filter__price-button{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin: 20px 10px;
+
+}
+
 .filter__price-from {
   display: grid;
   grid-template-columns: 50px 100px;
@@ -158,6 +174,14 @@
 }
 .category {
   cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  color: rgb(60, 50, 50);
+}
+.filter__category-title{
+  margin: 10px 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--border-color);
 }
 @media screen and (min-width: 720px) {
   .home{
