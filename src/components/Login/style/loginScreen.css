@@ -30,3 +30,21 @@
   .login__item{
     margin-bottom: 10px;
   }
+  .login__screen{
+    text-align: center;
+  }
+  .login__screen i{
+      font-size: 50px;
+      color: var(--secondary-color)
+  }
+  .login__screen h2{
+    font-size: 30px;
+    color: var(--secondary-color)
+  }
+  .login__screen h3 {
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--primary-color);
+    background-color: #6b1384;
+  }
