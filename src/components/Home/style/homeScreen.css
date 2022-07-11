@@ -152,6 +152,7 @@
   border-bottom: 2px solid var(--border-color);
   margin-left: 10px;
 }
+
 .filter__price-button{
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -164,13 +165,19 @@
 
 .filter__price-from {
   display: grid;
-  grid-template-columns: 50px 100px;
+  grid-template-columns: 50px 200px;
   margin: 10px 0px;
+}
+.filter__price-from input{
+  padding: 3px 10px;
 }
 .filter__price-to {
   display: grid;
-  grid-template-columns: 50px 100px;
+  grid-template-columns: 50px 200px;
   margin: 10px 0px;
+}
+.filter__price-to input{
+  padding: 3px 10px;
 }
 .category {
   cursor: pointer;
